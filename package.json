@@ -1,0 +1,29 @@
+{
+  "name": "fetch-ntlm",
+  "description": "Pure javascript implementation for NTLM",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "scripts": {
+    "test": "node_modules/.bin/tape src/test/*.test.js",
+    "postversion": "git push origin master --tags",
+    "build": "webpack",
+    "prepack": "npm build"
+  },
+  "author": "Anton Van Zyl <aavanzyl@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aavanzyl/fetch-ntlm.git"
+  },
+  "dependencies": {
+    "crypto-js": "3.1.5"
+  },
+  "devDependencies": {
+    "express": "^4.14.0",
+    "express-ntlm": "2.3.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "cors": "^2.8.5",
+    "node-fetch": "2.3.0"
+  }
+}
